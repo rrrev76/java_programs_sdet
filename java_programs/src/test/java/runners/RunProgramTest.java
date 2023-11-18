@@ -1,6 +1,7 @@
 package runners;
 
 import org.junit.Test;
+import programs.strings.PrintSequenceOfChars;
 import programs.strings.RemoveDuplicateChars;
 import programs.strings.ReverseString;
 
@@ -13,9 +14,15 @@ public class RunProgramTest {
     }
 
     @Test
-    public void reverseString () {
+    public void reverseString() {
         System.out.println(ReverseString.reversedString("abcd"));
         System.out.println(ReverseString.reversedStringUsingStringBuffer("Atos"));
         System.out.println(ReverseString.reversedStringUsingLoop("dbo"));
+    }
+
+    @Test
+    public void printChars() {
+        PrintSequenceOfChars.printChars("abcd");
+        System.out.println();
     }
 }
